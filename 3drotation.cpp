@@ -41,6 +41,18 @@ axis();
 cout<<"After rotation about yaxis";
 bar3d(midx+x1,midy-100,midx+x2,midy-90,5,1);
 delay(1000);
+ // Here we will see the effect of rotation very fast, delay time has been reduced.
+ cout<<"After rotation about z axis";
+bar3d(midx+x1,midy-y1,midx+x2,midy-y2,5,1);
+delay(10);
+ axis();
+cout<<"After rotation  about x axis";
+bar3d(midx+50,midy-x1,midx+60,midy-x2,5,1);
+delay(10);
+axis();
+cout<<"After rotation about yaxis";
+bar3d(midx+x1,midy-100,midx+x2,midy-90,5,1);
+delay(10);
 getch();
 closegraph();
 return 0;
