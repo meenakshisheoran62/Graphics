@@ -9,7 +9,7 @@ void putpixel4(int xc,int yc,int x,int y,int color)
 	putpixel(xc-x,yc+y,color);
 	putpixel(xc+x,yc-y,color);
 	putpixel(xc-x,yc-y,color);
-	// color filling is done at this plaec.
+	// color filling is done at this place.
 }
 void floodfill(int x,int y,int oldcolor,int fillcolor)
 {
