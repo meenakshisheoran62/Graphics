@@ -54,6 +54,25 @@ int main()
 		//floodfill(i+h,k+120,15);*/
 	}
 	delay(5000);
+	// Now, snowman is in slow motion.
+	cout<<" Hey, NOW SNOWMAN IS IN SLOWMOTION, HAVE FUN\n";
+	for(int i=0;i<560;i+=10)
+	{
+	        setcolor(15);
+		circle(i+h,k-76,25);
+		circle(i+h,k,50);
+		circle(i+h,k+121,70);
+		
+		setcolor(15);
+		floodfill(i+h,k-75,15);
+		setcolor(15);
+		floodfill(i+h,k,15);
+		setcolor(15);
+		floodfill(i+h,k+120,15);
+		delay(100000);
+		cleardevice();
+	}
+	delay(5000);
 	
 	closegraph();
 	return 0;
